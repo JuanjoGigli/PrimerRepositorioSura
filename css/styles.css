@@ -7,10 +7,24 @@
 
 /*PIXELES BASE 480 LUEGO RESPONSIVE A 768*/
 /* Pagina principal----------------------------------------------------------------- */
+.footerindex{
+    background-color: rgb(24, 24, 26) ;
+    text-align: center;
+}
+span{
+    color: white;
+}
+.nav-item{
+    padding-left: 50px;
+}
+.navbar-nav {
+    font-size: 130%;
+}
 .bodyindex {
-    background-image: url(../images/fondo\ azul.webp);
+    background-image: url(../images/toma-un-descanso_3840x2400_xtrafondos.com.jpg);
     width: 100%;
     background-size: cover;
+    background-color: opacity 50%;
 }
 
 .suraprin {
@@ -210,17 +224,17 @@ footer .videosura {
 
 .infosura p {
     grid-area: infosura;
-    font-size: 15px;
+    font-size: 20px;
     align-items: center;
-    margin-left: 5px;
+    border: black solid 1px;
 
 }
 
 .surainfo p {
     grid-area: surainfo;
-    font-size: 15px;
+    font-size: 20px;
     align-items: center;
-    margin-left: 5px;
+    border: black solid 1px;
 }
 
 .imagenesaxie {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -14,49 +14,62 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body class="bodyformulario">
-    <div class="contenedor5" >    
-    <div class="naveizq animate__animated animate__backInLeft">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./formulario.html">Formulario Becas</a></li>
-            </ul>
+<body class="bodyindex">
+    <div class=".container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__backInLeft">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/sobrenosotros.html">Sobre
+                                nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/sponsors.html">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/redessociales.html">Redes
+                                sociales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/formulario.html">Formulario</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <h1 class="formprin animate__animated animate__backInLeft">Completa el formulario para obtener una beca NFT</h1>
+        <div class="formulario">
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Apellido">
+                    <label for="Mail">Mail</label>
+                    <input type="mail" name="mail" placeholder="Mail">
+                    <input type="checkbox" name="juego" id="">
+                    <label for="Juego">Axie</label>
+                    <input type="checkbox" name="juego" id="">
+                    <label for="Juego">Cyball</label>
+                    <input type="checkbox" name="juego" id="">
+                    <label for="Juego">Pegaxy</label>
+                </fieldset>
+                <textarea name="comentarios" id="" cols="30" rows="10"
+                    placeholder="Porque crees que mereces una beca"></textarea>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </form>
         </div>
-        <div class="naveder animate__animated animate__backInLeft">
-            <ul>
-                <li><a href="./redessociales.html">Redes sociales</a></li>
-                <li><a href="./sponsors.html">Sponsors</a></li>
-            </ul>
-        </div>
-        </div>
-    <h1 class="formprin animate__animated animate__backInLeft">Completa el formulario para obtener una beca NFT</h1>
-    <div class="formulario">
-        <form action="" method="get"> 
-            <fieldset>
-                <legend>Datos personales</legend>
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="nombre" placeholder="Tu nombre">
-                <label for="Apellido">Apellido</label>
-                <input type="text" name="apellido" placeholder="Apellido">
-                <label for="Mail">Mail</label>
-                <input type="mail" name="mail" placeholder="Mail">
-                <input type="checkbox" name="juego" id="">
-                <label for="Juego">Axie</label>
-                <input type="checkbox" name="juego" id="">
-                <label for="Juego">Cyball</label>
-                <input type="checkbox" name="juego" id="">
-                <label for="Juego">Pegaxy</label>
-            </fieldset>
-            <textarea name="comentarios" id="" cols="30" rows="10"
-                placeholder="Porque crees que mereces una beca"></textarea>
-            <input type="reset" value="Limpiar">
-            <input type="submit" value="Enviar">
-        </form>
+        <p class="parraform">Si sos seleccionado para una beca en nuestra guild te contactaremos por mail</p>
+        <footer class="footerform"><span>Derechos reservados - Juan Jose Gigli</span></footer>
     </div>
-    <p class="parraform">Si sos seleccionado para una beca en nuestra guild te contactaremos por mail</p>
-
-    <footer class="footerform" ><span>Derechos reservados - Juan Jose Gigli</span></footer>
-</div>
+    </div>
 </body>
 
 </html>
