@@ -7,19 +7,44 @@
 
 /*PIXELES BASE 480 LUEGO RESPONSIVE A 768*/
 /* Pagina principal----------------------------------------------------------------- */
-.footerindex{
-    background-color: rgb(24, 24, 26) ;
+
+span.fpadd{
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white ;
+}
+.fotohover:hover{
+    width: 200px;
+}
+
+.navehover:hover {
+    background-color: rgb(73, 71, 80);
+}
+
+.footerindex {  
+    background-color: rgb(24, 24, 26);
     text-align: center;
 }
-span{
+ 
+.fpadd{
+padding-left: 30px;
+}
+
+span {
     color: white;
 }
-.nav-item{
+
+.nav-item {
     padding-left: 50px;
 }
+
 .navbar-nav {
     font-size: 130%;
 }
+
 .bodyindex {
     background-image: url(../images/toma-un-descanso_3840x2400_xtrafondos.com.jpg);
     width: 100%;
@@ -367,11 +392,12 @@ footer .videosura {
         "footer footer";
 }
 
-.bodyredes{
+.bodyredes {
     background-image: url(../images/consola.jpg);
     width: 100%;
     background-size: cover;
 }
+
 .naveizq {
     grid-area: naveizq;
 }
@@ -488,22 +514,22 @@ footer .videosura {
 }
 
 @media screen and (min-width:1200px) {
-    .formprin{
+    .formprin {
         font-size: 300%;
     }
 
-    .parraform{
+    .parraform {
         font-size: 200%;
         text-align: center;
     }
 
-    .formulario{
+    .formulario {
         font-size: 150%;
         margin: 0 auto;
         display: flex;
         width: 50%;
     }
-    
+
 }
 
 
