@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+/*PIXELES BASE 480 LUEGO RESPONSIVE A 768*/
+/* Pagina principal----------------------------------------------------------------- */
+
+span.fpadd{
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white ;
+}
+.fotohover:hover{
+    width: 200px;
+}
+
+.navehover:hover {
+    background-color: rgb(73, 71, 80);
+}
+
+.footerindex {  
+    background-color: rgb(24, 24, 26);
+    text-align: center;
+}
+
+.fpadd{
+padding-left: 30px;
+}
+
+span {
+    color: white;
+}
+
+.nav-item {
+    padding-left: 50px;
+}
+
+.navbar-nav {
+    font-size: 130%;
+}
+
+.bodyindex {
+    background-image: url(../images/toma-un-descanso_3840x2400_xtrafondos.com.jpg);
+    width: 100%;
+    background-size: cover;
+    background-color: opacity 50%;
+}
+
+.suraprin {
+    color: black;
+    font-size: 350%;
+    text-align: center;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 40px auto 100px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: "header header"
+        "naveizq naveder"
+        "nftuno nftdos"
+        "footer footer"
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nftuno p {
+    grid-area: nft;
+    border: 1px solid black;
+    padding-top: 10px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nftdos p {
+    grid-area: nftdos;
+    border: 1px solid black;
+    padding-top: 10px;
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+div.naveizq {
+    grid-area: naveizq;
+    background-color: white;
+
+}
+
+div.naveder {
+    grid-area: naveder;
+    background: white;
+
+}
+
+.naveizq ul,
+.naveder ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 15px;
+}
+
+.naveizq ul li a,
+.naveder ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+footer .derechos {
+    padding-top: 20px;
+}
+
+footer .videosura {
+    border: 10px solid white;
+    width: auto;
+    height: auto;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width:768px) {
+
+    .grilla {
+        grid-template-columns: repeat(4fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 100px 40px auto 2fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: "header header"
+            "naveizq naveder"
+            "nftuno nftdos"
+            "footer footer";
+    }
+
+    .suraprin {
+        font-size: 500%;
+        text-align: center;
+    }
+
+    .header {
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+    }
+
+    .nftuno p {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .nftdos p {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .naveizq ul,
+    .naveder ul {
+        font-size: 20px;
+    }
+
+    footer {
+        padding-top: 20px;
+    }
+
+    footer .videosura {
+        border: 10px solid white;
+        width: 30rem;
+        height: 30rem;
+    }
+
+}
+
+
+/* SOBRE NOSOTROS ARRANCA ACA--------------------------------------------------------------*/
+.contenedor2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 60px 200px 100px 300px 10px;
+    grid-template-areas: "naveder naveizq"
+        "titulosobrenos titulosobrenos"
+        "logosura logosura"
+        "infosura surainfo"
+        "imagenesaxie imagenesmavis"
+        "footer footer";
+}
+
+.titulosobrenos {
+    grid-area: titulosobrenos;
+    display: flex;
+    font-size: 2rem;
+    padding-top: 5px;
+    justify-content: center;
+}
+
+.logosura {
+    grid-area: logosura;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logosura img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.infosura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.surainfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infosura p {
+    grid-area: infosura;
+    font-size: 20px;
+    align-items: center;
+    border: black solid 1px;
+
+}
+
+.surainfo p {
+    grid-area: surainfo;
+    font-size: 20px;
+    align-items: center;
+    border: black solid 1px;
+}
+
+.imagenesaxie {
+    grid-area: imagenesaxie;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagenesaxie img {
+    width: 200px;
+    height: 200px;
+}
+
+.imagenesmavis {
+    grid-area: imagenesmavis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenesmavis img {
+    width: 200px;
+    height: 200px;
+}
+
+.footer2 {
+    grid-area: footer;
+}
+
+@media screen and (min-width:768px) {
+    .contenedor2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.3fr 1fr 2fr 2fr 3fr 100px;
+        grid-template-areas: "naveder naveizq"
+            "titulosobrenos titulosobrenos"
+            "logosura logosura"
+            "infosura imagenesaxie"
+            "imagenesmavis surainfo"
+            "footer footer";
+    }
+
+    .titulosobrenos {
+        font-size: 4rem;
+    }
+
+    .logosura img {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .infosura p {
+        font-size: 25px;
+        padding-left: 5px;
+        border: 1px solid black;
+    }
+
+    .surainfo p {
+        font-size: 25px;
+        padding-left: 5px;
+        border: 1px solid black;
+    }
+
+    .imagenesaxie img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .imagenesmavis img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .contenedor2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3% auto auto 30% 30% 5%;
+        grid-template-areas: "naveder naveizq"
+            "titulosobrenos titulosobrenos"
+            "logosura logosura"
+            "infosura imagenesaxie"
+            "imagenesmavis surainfo"
+            "footer footer";
+    }
+
+    .surainfo {
+        padding-right: 20px;
+    }
+
+    .infosura {
+        padding-left: 20px;
+    }
+
+    .infosura p {
+        font-size: 35px;
+        padding-left: 5px;
+        border: 1px solid black;
+    }
+
+    .surainfo p {
+        font-size: 35px;
+        padding-left: 5px;
+        border: 1px solid black;
+    }
+
+    .imagenesaxie img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .imagenesmavis img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/*ACA ARRANCA REDES SOCIALES-----------------------------------------------------*/
+
+.contenedor3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 50px 60% 60px 5%;
+    grid-template-areas: "naveizq naveder"
+        "redestitulo redestitulo"
+        "redess redess"
+        "partecomu partecomu"
+        "footer footer";
+}
+
+.bodyredes {
+    background-image: url(../images/consola.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+.naveizq {
+    grid-area: naveizq;
+}
+
+.naveder {
+    grid-area: naveder;
+}
+
+.redestitulo {
+    grid-area: redestitulo;
+    font-size: 1.5em;
+}
+
+.imagenesredes {
+    grid-area: redess;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+
+.imagenesredes div a img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.partecomu {
+    padding-top: 20px;
+    grid-area: partecomu;
+    text-align: center;
+}
+
+.footerredes {
+    grid-area: footer;
+}
+
+.footerredes p {
+    padding-top: 15px;
+}
+
+@media screen and (min-width:1200px) {
+
+    .redestitulo {
+        padding-top: 30px;
+        font-size: 3em;
+    }
+
+    .imagenesredes div a img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .imagenesredes {
+        padding-top: 50px;
+    }
+
+    .partecomu {
+        font-size: 200%;
+        padding-top: 70px;
+    }
+
+    .footerredes {
+        padding-top: 50px;
+    }
+}
+
+/*FORMULARIO ARRANCA ACA-------------------------------------------------------*/
+.bodyformulario {
+    background-image: url(../images/consola.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+.contenedor5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 60px 80% 8% 5%;
+    grid-template-areas: "naveizq naveder"
+        "h1 h1"
+        "formulario formulario"
+        "parraform parraform"
+        "footer footer";
+}
+
+.naveizq {
+    grid-area: naveizq;
+}
+
+.naveder {
+    grid-area: naveder;
+}
+
+.formprin {
+    grid-area: h1;
+    font-size: 200%;
+    text-align: center;
+}
+
+.formulario {
+
+    background-color: grey;
+    padding: 15px 15px 15px 15px;
+}
+
+.parraform {
+    grid-area: parraform;
+    padding-left: 10px;
+}
+
+.footerform {
+    grid-area: footerform;
+}
+
+@media screen and (min-width:1200px) {
+    .formprin {
+        font-size: 300%;
+    }
+
+    .parraform {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    .formulario {
+        font-size: 150%;
+        margin: 0 auto;
+        display: flex;
+        width: 50%;
+    }
+
+}
+
+
+
+/*ACA ARRANCA SPONSORS----------------------------------------------------------*/
+
+
+.contenedor4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 70px 80% 5%;
+    grid-template-areas: "naveizq naveder"
+        "titulosponsors titulosponsors"
+        "logossponsors logossponsors"
+        "footer footer";
+}
+
+.naveizq {
+    grid-area: naveizq;
+}
+
+.naveder {
+    grid-area: naveder;
+}
+
+.titulosponsors {
+    grid-area: titulosponsors;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.logossponsors {
+    grid-area: logossponsors;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.borderspon {
+    border: 27px solid white;
+
+}
+
+.bodysponsors {
+    background-image: url(../images/man-hands-on-the-keyboard-laptop-free-photo.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+@media screen and (min-width:1200px) {
+    .titulosponsors {
+        font-size: 3em;
+    }
+
+    .logossponsors {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .logossponsors img {
+        width: 300px;
+        height: 300px;
+    }
+}

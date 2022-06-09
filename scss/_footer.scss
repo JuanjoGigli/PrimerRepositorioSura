@@ -1,0 +1,29 @@
+.footerscss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    .videosura {
+        border: 10px solid $color-secundario;
+        width: 450px;
+        height: 500px;
+    }
+
+    div {
+        background-color: rgb(24, 24, 26);
+        text-align: center;
+
+        div {
+            a {
+                text-decoration: none;
+                color: $color-secundario;
+            }
+
+            .fpadd {
+                padding-left: 0;
+                color: $color-secundario;
+            }
+        }
+    }
+}
