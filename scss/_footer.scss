@@ -5,7 +5,7 @@
     padding-top: 20px;
 
     .videosura {
-        border: 10px solid $color-secundario;
+        border: 10px solid map-get($colores-pagina ,secundario);
         width: 450px;
         height: 500px;
     }
@@ -17,12 +17,12 @@
         div {
             a {
                 text-decoration: none;
-                color: $color-secundario;
+                color: map-get($colores-pagina ,secundario);
             }
 
             .fpadd {
                 padding-left: 0;
-                color: $color-secundario;
+                color: map-get($colores-pagina ,secundario);
             }
         }
     }

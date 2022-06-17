@@ -4,6 +4,15 @@
   box-sizing: border-box;
   font-family: 'Anton', sans-serif; }
 
+/*MAPA COLORES*/
+/* Para extend*/
+.parrafos, .bodyindex div .nftuno div p {
+  border: 1px solid black;
+  padding-top: 10px;
+  color: black;
+  text-align: center;
+  font-size: 30px; }
+
 .footerscss {
   display: flex;
   flex-direction: column;
@@ -37,22 +46,11 @@
       color: black;
       font-size: 450%;
       text-align: center; }
-  .bodyindex div .nftuno div p {
-    border: 1px solid black;
-    padding-top: 10px;
-    color: black;
-    text-align: center;
-    font-size: 30px; }
-  .bodyindex div .nftuno div p {
-    border: 1px solid black;
-    padding-top: 10px;
-    color: black;
-    text-align: center;
-    align-items: center;
-    font-size: 30px; }
 
 .fotohover:hover {
-  width: 200px; }
+  width: 200px;
+  height: 150px;
+  /*Mixin*/ }
 
 .navehover:hover {
   background-color: #494750; }
@@ -64,7 +62,7 @@
   font-size: 130%; }
 
 .border {
-  border: 1px solid black; }
+  border: black; }
 
 /* ACA TERMINA LO DEL TP DE SASS*/
 /* SOBRE NOSOTROS ARRANCA ACA LO DEJO PARA UN FUTURO--------------------------------------------------------------*/

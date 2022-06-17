@@ -1,2 +1,11 @@
-$color-principal: black;
-$color-secundario:white;
+/*MAPA COLORES*/
+$colores-pagina:(principal:black, secundario:white, alternativo:rgb(73, 71, 80));
+
+/* Para extend*/
+.parrafos {
+    border: 1px solid map-get($colores-pagina, principal);
+    padding-top: 10px;
+    color: map-get($colores-pagina, principal);
+    text-align: center;
+    font-size: 30px;
+}
