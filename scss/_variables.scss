@@ -1,11 +1,13 @@
 /*MAPA COLORES*/
-$colores-pagina:(principal:black, secundario:white, alternativo:rgb(73, 71, 80));
+$colores-pagina:(principal:black, secundario:white, alternativo:rgb(47, 45, 51), llamativo:rgb(178, 164, 224));
 
 /* Para extend*/
 .parrafos {
-    border: 1px solid map-get($colores-pagina, principal);
+    border-radius:  15px;
     padding-top: 10px;
+    background-color: map-get($colores-pagina, llamativo);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     color: map-get($colores-pagina, principal);
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }

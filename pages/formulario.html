@@ -5,43 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Te dejamos el formulario por si queres ser parte de nuestra comunidad y trabajar con nosotros">
+    <meta name="description"
+        content="Te dejamos el formulario por si queres ser parte de nuestra comunidad y trabajar con nosotros">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>
         SURA | FORMULARIO DE INSCRIPCION </title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body class="bodyindex">
+    <div class="fondo"></div>
     <div class=".container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__backInLeft">
+        <nav class="navbar navbar-expand-lg  navbar-dark animate__animated animate__backInLeft"
+            style="background-color: rgb(105, 54, 254)">
             <div class="container-fluid">
                 <a class="navbar-brand " href="#"><img src="../images/logo sura (2).png" width="60" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/pages/sobrenosotros.html">Sobre
-                                nosotros</a>
+                            <a class="nav-link active navehover" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/pages/sponsors.html">Sponsors</a>
+                            <a class="nav-link active navehover" aria-current="page"
+                                href="/pages/sponsors.html">Sponsors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/pages/redessociales.html">Redes
+                            <a class="nav-link active navehover" aria-current="page"
+                                href="/pages/redessociales.html">Redes
                                 sociales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active navehover" aria-current="page"
+                                href="/pages/sobrenosotros.html">Sobre
+                                nosotros</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -51,36 +56,31 @@
                 </div>
             </div>
         </nav>
-        <h1 class="formprin animate__animated animate__backInLeft">Completa el formulario para obtener una beca NFT</h1>
-        <div class="formulario">
-            <form action="" method="get">
-                <fieldset>
-                    <legend>Datos personales</legend>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Tu nombre">
-                    <label for="Apellido">Apellido</label>
-                    <input type="text" name="apellido" placeholder="Apellido">
-                    <label for="Mail">Mail</label>
-                    <input type="mail" name="mail" placeholder="Mail">
-                    <input type="checkbox" name="juego" id="">
-                    <label for="Juego">Axie</label>
-                    <input type="checkbox" name="juego" id="">
-                    <label for="Juego">Cyball</label>
-                    <input type="checkbox" name="juego" id="">
-                    <label for="Juego">Pegaxy</label>
-                </fieldset>
-                <textarea name="comentarios" id="" cols="30" rows="10"
-                    placeholder="Porque crees que mereces una beca"></textarea>
-                <input type="reset" value="Limpiar">
-                <input type="submit" value="Enviar">
+        <h1 class="formprin animate__animated animate__backInLeft col-md-12 col-sm-12 col-12">Completa el formulario
+            para obtener una beca NFT</h1>
+        <div class="formulario col-md-12 col-sm-12 col-12">
+            <form class="formdentro" action="" method="get">
+                <legend>Datos personales</legend>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Tu nombre">
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Apellido">
+                <label for="Telefono">Telefono</label>
+                <input type="tel" name="telefono" placeholder="Telefono">
+                <label for="Mail">Mail</label>
+                <input type="mail" name="mail" placeholder="Mail">
+                <div class="botonesform">
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar"></div>
             </form>
         </div>
         <p class="parraform">Si sos seleccionado para una beca en nuestra guild te contactaremos por mail</p>
-        <footer class="footerscss animate__animated animate__backInLeft footernuevo">
-            <iframe class="videosura" width="500" height="" src="https://www.youtube.com/embed/7a5ROTmpAnY"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+
+        <div class="logoform col-md-12 col-sm-12 col-12">
+            <img src="../images/AXIE-1024x282.png" alt="logo de sura" width="800">
+        </div>
+
+        <footer class=" footerscss animate__animated animate__backInLeft footernuevo">
             <div class=" footerindex col-md-12 col-sm-12 col-12">
                 <div class="">
                     <a href="https://goo.gl/maps/1wc9inkinaqNnvSZ6" target="_blank"><img class=""
@@ -93,8 +93,6 @@
                 </div>
         </footer>
     </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
