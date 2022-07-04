@@ -31,10 +31,6 @@
 
     div {
         header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
             .suraprin {
                 color: map-get($colores-pagina, principal);
                 font-size: 450%;
@@ -43,7 +39,7 @@
         }
 
         .nftuno {
-            padding: 15px 10px 0 10px;
+            padding: 15px 0 0 10px;
 
             div {
                 p {
@@ -96,7 +92,7 @@
 }
 
 /* ACA TERMINA LO DEL TP DE SASS*/
-/* SOBRE NOSOTROS ARRANCA ACA LO DEJO PARA UN FUTURO--------------------------------------------------------------*/
+/* SOBRE NOSOTROS ARRANCA ACA--------------------------------------------------------------*/
 .bodyindex {
     .titulosobrenos {
         text-align: center;
@@ -120,11 +116,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        img {
-            width: 300px;
-            height: 300px;
-        }
     }
 
     .infosura {
@@ -133,8 +124,7 @@
         align-items: center;
 
         p {
-            font-size: 28px;
-            align-items: center;
+
             border: black solid 1px;
 
         }
@@ -146,8 +136,6 @@
         align-items: center;
 
         p {
-            font-size: 28px;
-            align-items: center;
             border: black solid 1px;
         }
     }

@@ -43,16 +43,12 @@
     z-index: -1; }
   .bodyindex .nav-link {
     color: white; }
-  .bodyindex div header {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .bodyindex div header .suraprin {
-      color: black;
-      font-size: 450%;
-      text-align: center; }
+  .bodyindex div header .suraprin {
+    color: black;
+    font-size: 450%;
+    text-align: center; }
   .bodyindex div .nftuno {
-    padding: 15px 10px 0 10px; }
+    padding: 15px 0 0 10px; }
   .bodyindex .videosura {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
@@ -78,7 +74,7 @@
   font-size: 130%; }
 
 /* ACA TERMINA LO DEL TP DE SASS*/
-/* SOBRE NOSOTROS ARRANCA ACA LO DEJO PARA UN FUTURO--------------------------------------------------------------*/
+/* SOBRE NOSOTROS ARRANCA ACA--------------------------------------------------------------*/
 .bodyindex .titulosobrenos {
   text-align: center;
   font-size: 4em;
@@ -96,17 +92,12 @@
   display: flex;
   justify-content: center;
   align-items: center; }
-  .bodyindex .imagenesmavis img {
-    width: 300px;
-    height: 300px; }
 
 .bodyindex .infosura {
   display: flex;
   justify-content: center;
   align-items: center; }
   .bodyindex .infosura p {
-    font-size: 28px;
-    align-items: center;
     border: black solid 1px; }
 
 .bodyindex .surainfo {
@@ -114,8 +105,6 @@
   justify-content: center;
   align-items: center; }
   .bodyindex .surainfo p {
-    font-size: 28px;
-    align-items: center;
     border: black solid 1px; }
 
 .bodyindex .imagenesaxie {
